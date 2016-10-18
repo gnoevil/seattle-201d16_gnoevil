@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment One</title>
+		<style type="text/css">
+			body {
+				font-family: sans-serif;
+			}
+			p {
+			line-height: 1.5em;
+			}
+			.question {
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h3>Hello, friend.</h3>
+				<p class ="question">What is your name?</p>
+				<p class ="question">What is your favorite color?</p>
+				<p class ="question">Do you play Pokemon Go?</p>
+				<p class ="question">Are we still friends?</p>
+			</section>
+		</main>
+		<footer>
+		</footer>
+		</body>
+	<script>
+		var username = prompt('What is your name, friend?');
+			alert("Hello" +" "+ username + ".");
+			console.log("Hello" + " "+ username + ".");
+
+		var favColor = prompt('What is your favorite color, friend?');
+			alert(favColor + " " + "is a pretty color.");
+			console.log(favColor + " " + "is your favorite color.");
+
+		var pokeGo = confirm('Do you play Pokemon Go, friend?');
+			if(pokeGo === true) {
+				alert("I don't think we can be friends");
+				console.log("Keep playing Pokemon Go");
+			} else {
+				alert("Whew I thought for a second we couln't be friends.")
+				console.log("I am glad you don't play Pokemon Go");
+			};
+
+		var friendship = confirm("Do you think we can still be friends?");
+			if(friendship === true) {
+				alert("I am really happy this is true.");
+				console.log("I am happy we are friends.");
+			} else {
+				alert("Well I stink at remembering names anyways.");
+				console.log("BYE");
+			};
+	</script>
+</html>
